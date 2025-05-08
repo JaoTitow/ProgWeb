@@ -41,7 +41,7 @@ app.get('/users/signin', (req, res) => {
 app.get('/users/signup', (req, res) => {
     res.send('signup')
     req.requestTime = Date.now()
-    console.log(`[${new Date().toISOString()}] Acessado: ${req.method} ${req.url}`);
+    console.log(`[${new Date().toISOString()}] Acessado: ${req.method} ${req.url}`)
 })
 
 app.use((req, res) => {
