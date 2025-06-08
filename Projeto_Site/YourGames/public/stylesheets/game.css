@@ -1,0 +1,106 @@
+/* ===== Base ===== */
+body {
+  background: linear-gradient(90deg, #2B0A3D, #1A112F);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 3rem;
+}
+
+
+
+/* ===== Cartão Principal ===== */
+.card {
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.bg-purple-dark {
+  background-color: #1E0F2C;
+}
+
+.bg-purple-light {
+  background-color: #5D2E8C;
+  color: #fff;
+}
+
+/* ===== Títulos e textos ===== */
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+small {
+  color: #aaa;
+}
+
+/* ===== Imagem ===== */
+.shadow {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+/* ===== Gêneros (badges) ===== */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.45em 0.8em;
+  border-radius: 12px;
+  background-color: #5D2E8C;
+  color: #fff;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  display: inline-block;
+}
+
+/* ===== Avaliação ===== */
+.rating {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.rating span {
+  font-size: 1.4rem;
+  color: gold;
+}
+
+/* ===== Comentários ===== */
+.bg-purple-darker {
+  background-color: #140021; /* fundo mais escuro que o cartão */
+}
+
+.comment-box {
+  background-color: #1a0129;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #32004b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.comment-box:hover {
+  transform: translateY(-3px);
+}
+
+.comment-box strong {
+  color: #d0a2ff;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.comment-box p {
+  margin: 0;
+  color: #f2f2f2;
+}
+

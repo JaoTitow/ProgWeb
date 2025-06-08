@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <% include partials/head %>
+  <link rel="stylesheet" href="/stylesheets/home.css" />
+
+  <body class="bg-dark-purple text-white">
+    <% include partials/header %>
+
+    <main class="container py-5">
+      <h2 class="mb-4">Recomendações para você</h2>
+
+      <!-- Área destacada com fundo escuro -->
+      <div class="recommendation-area p-4 rounded">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
+          <% jogos.forEach(jogo => { %>
+            <div class="col">
+              <a href="/game/<%= jogo.slug %>" class="text-decoration-none text-white">
+                <div class="card bg-purple-dark border-0 shadow-sm h-100">
+                  <h6 class="game-title text-center mb-0"><%= jogo.title %></h6>
+                  <img src="<%= jogo.coverUrl %>" class="card-img-top" alt="<%= jogo.title %>">
+                </div>
+              </a>
+            </div>
+          <% }) %>
+        </div>
+      </div>
+
+      <!-- Paginação -->
+      <div class="d-flex justify-content-between align-items-center mt-5">
+        <% if (currentPage > 1) { %>
+          <a href="/?page=<%= currentPage - 1 %><% if (searchTerm) { %>&search=<%= searchTerm %><% } %>" class="btn btn-outline-light">
+            ← Página anterior
+          </a>
+        <% } else { %>
+          <div></div>
+        <% } %>
+
+        <a href="/?page=<%= currentPage + 1 %><% if (searchTerm) { %>&search=<%= searchTerm %><% } %>" class="btn btn-outline-light">
+          Próxima página →
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

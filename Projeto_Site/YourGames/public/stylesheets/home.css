@@ -1,0 +1,70 @@
+/* === Tema base da página === */
+body.bg-dark-purple {
+  background: linear-gradient(90deg, #2B0A3D, #1A112F);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* === Card de jogo === */
+.card {
+  background-color: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+}
+
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* === Imagem do jogo === */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0 0 8px 8px;
+}
+
+/* === Nome do jogo acima da imagem === */
+.game-title {
+  margin: 0;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  background-color: transparent; /* remove fundo */
+  box-shadow: none;
+  border: none;
+}
+
+
+/* === Links dos cards === */
+a.text-decoration-none {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === Ajuste responsivo === */
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 180px;
+  }
+
+  .game-title {
+    font-size: 0.85rem;
+  }
+}
+
+
+.recommendation-area {
+  background-color: #120720; /* fundo mais escuro */
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
